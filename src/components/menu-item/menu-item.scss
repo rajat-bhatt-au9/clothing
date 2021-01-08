@@ -5,9 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid rgb(90, 90, 90);
   margin: 0 7.5px 15px;
-  border-radius: 10px;
+
   overflow: hidden;
 
   &:hover {
@@ -49,9 +49,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    background-color: white;
-    opacity: 0.7;
+    background-color: #2cccc3;
+    color: #181818;
+    opacity: 0.6;
     position: absolute;
 
     .title {

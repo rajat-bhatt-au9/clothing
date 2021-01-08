@@ -1,13 +1,15 @@
 import React from 'react';
 import './homepage.scss';
 import Directory from '../../components/directory/Directory';
-
+import Banner from '../../components/banner/Banner';
 
 const HomePage =()=>(
-    <div className='homepage' >
+    <div>
+        <Banner />
         
-        <Directory />
-        
+        <div className='homepage' >
+            <Directory />
+        </div>
     </div>
 );
 

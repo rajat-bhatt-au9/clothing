@@ -1,0 +1,59 @@
+$breakpoint-tablet: 767px;
+
+.banner {
+  background: url(https://cdn.pixabay.com/photo/2019/01/25/13/47/beautiful-people-3954533_960_720.jpg);
+  height: 100vh;
+  width: 100%;
+  margin: -25px 0px 100px 0px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  & .main-heading {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-align: center;
+  }
+
+  & .link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: #262626;
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+
+  & .para {
+    padding: 0 30%;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner {
+    &.main-heading {
+      font-size: 30px;
+    }
+    &.para {
+      display: none;
+    }
+    & .link {
+      padding: 5px 15px;
+    }
+  }
+}

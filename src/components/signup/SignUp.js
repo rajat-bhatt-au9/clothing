@@ -14,7 +14,8 @@ class SignUp extends React.Component{
             displayName: '',
             email: '',
             password:'',
-            confirmPassword :''
+            confirmPassword :'',
+            signupError: ''
         };
     }
     
@@ -26,8 +27,8 @@ class SignUp extends React.Component{
             alert("Passowrd don't Match");
             return;
         }
-        if(password.length > 6){
-            alert("Passowrd don't Match");
+        if(password.length < 6){
+            alert("Password should be atleast 6 character long");
             return;
         }
         try{
@@ -42,7 +43,12 @@ class SignUp extends React.Component{
             });
 
         }catch(error){
-            console.error(error);
+            console.log(error);
+            switch(error.code){
+                case 'auth/email-already-in-use':
+                    this.setState({signupError: 'Email already exsist'})
+                    break;
+            }
         }
     };
 
@@ -56,16 +62,21 @@ class SignUp extends React.Component{
 
         const { displayName, email, password, confirmPassword} = this.state;
         return(
-            <div className='signup'>
+            <div className='sign-up'>
                 <h2 className='title'> I do not have a account</h2>
                 <span>Sign up with your email and password.</span>
+
+                <div className='error'>
+                    <h2> {this.state.signupError} </h2>
+                </div>
+
                 <form className='sign-up-form' onSubmit={this.handleSumbmit}>
                     <FormInput
                         type='text'
                         name='displayName'
                         value={displayName}
                         onChange={this.handleChnage}
-                        label='Display Name'
+                        label='Name'
                         required
                     />
 

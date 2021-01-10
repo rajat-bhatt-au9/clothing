@@ -3,6 +3,10 @@
   flex-direction: column;
   width: 380px;
 
+  .error {
+    color: red;
+  }
+
   .title {
     margin: 10px 0;
   }

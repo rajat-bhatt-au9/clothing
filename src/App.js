@@ -7,6 +7,7 @@ import { createStructuredSelector } from "reselect";
 import HomePage from "./pages/homepage/Homepage";
 import ShopPage from "./pages/shop/ShopPage";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/SignInAndSignUpPage";
 import Checkout from "./pages/checkout/Checkout";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -59,6 +60,7 @@ class App extends React.Component {
             }
           />
         </Switch>
+        <Footer />
       </div>
     );
   }

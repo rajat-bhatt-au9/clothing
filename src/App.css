@@ -1,5 +1,7 @@
 body {
-  font-family: "Kanit", sans-serif;
+  /* font-family: "Kanit", sans-serif; */
+  /* font-family: "Parisienne", cursive; */
+  font-family: "Quicksand", sans-serif;
 
   background-color: #e5e5e5;
   color: #14213d;
@@ -7,5 +9,5 @@ body {
 
 a {
   text-decoration: none;
-  color: #fca311;
+  color: #d9083c;
 }

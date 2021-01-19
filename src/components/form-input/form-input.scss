@@ -3,7 +3,7 @@ $main-color: #fca311; //sass variable
 
 //make reuseable shrinkLabel
 @mixin shrinkLabel {
-  top: -25px;
+  top: -35px;
   font-size: 22px;
   color: $main-color;
 }
@@ -11,19 +11,18 @@ $main-color: #fca311; //sass variable
 .group {
   position: relative;
   margin: 45px 0;
+  border: 1px solid black;
 
   .form-input {
     background: none;
-    background-color: #e5e5e5;
     color: $sub-color;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 100%;
+    width: 95%;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid $sub-color;
-    margin: 25px 0;
+    margin: 25px 0 0 0;
 
     &:focus {
       outline: none;

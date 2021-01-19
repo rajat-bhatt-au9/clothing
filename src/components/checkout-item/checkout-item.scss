@@ -12,10 +12,16 @@
     padding-right: 15px;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 50%;
+      height: 50%;
     }
   }
+
+  .fa-trash-alt {
+    color: #af0000;
+    font-size: x-large;
+  }
+
   .name,
   .quantity,
   .price {
@@ -23,7 +29,24 @@
   }
 
   .quantity {
-    padding-left: 20px;
+    display: flex;
+    .minus {
+      cursor: pointer;
+
+      &:hover {
+        color: red;
+      }
+    }
+    .plus {
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(39, 180, 11);
+      }
+    }
+    .value {
+      margin: 0 10px;
+    }
   }
 
   .remove-button {

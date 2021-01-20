@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import CheckoutItem from "../../components/checkout-item/CheckoutItem";
-
+import CustomButton from "../../components/custom-button/CustomButton";
 import {
   selectCartItems,
   selectCartTotal,
@@ -36,6 +36,14 @@ const Chcekout = ({ cartItems, total }) => (
     ))}
 
     <div className="total">Total: ₹{total}</div>
+
+    <CustomButton
+      onClick={() => alert("Payment functionality is coming soon...")}
+      type="button"
+      inverted
+    >
+      Pay Now
+    </CustomButton>
   </div>
 );
 

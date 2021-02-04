@@ -38,7 +38,7 @@ const Chcekout = ({ cartItems, total }) => (
     <div className="total">Total: ₹{total}</div>
 
     <CustomButton
-      onClick={() => alert("Payment functionality is coming soon...")}
+      onClick={() => alert("Payment functionality coming soon...")}
       type="button"
       inverted
     >
